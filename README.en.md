@@ -56,16 +56,6 @@ Homelab managed with a **GitOps + IaC** philosophy, documented using the [Diáta
 
 ---
 
-## 📊 GitHub stats
-
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=bossot&show_icons=true&theme=radical&hide_border=true&count_private=true)
-
-![Top languages](https://github-readme-stats.vercel.app/api/top-langs/?username=bossot&layout=compact&theme=radical&hide_border=true)
-
-![GitHub streak](https://streak-stats.demolab.com/?user=bossot&theme=radical&hide_border=true)
-
----
-
 ## 🌟 About me
 
 - Professionally, I work as a Platform Engineer in cloud and Kubernetes environments.

@@ -1,4 +1,4 @@
-# 👋 Hola!
+# 👋 Hola
 
 🌐 **Idioma:** Català | [English](README.en.md)
 
@@ -55,18 +55,6 @@ Homelab gestionat amb filosofia **GitOps + IaC**, documentat en format [Diátaxi
 **Aprenent activament:** Loki · Grafana Alloy · kube-prometheus
 
 ---
-
-## 📊 Estadístiques GitHub
-
-![Estadístiques GitHub](https://github-readme-stats.vercel.app/api?username=bossot&show_icons=true&theme=radical&hide_border=true&count_private=true)
-
-![Llenguatges Principals](https://github-readme-stats.vercel.app/api/top-langs/?username=bossot&layout=compact&theme=radical&hide_border=true)
-
-![Ratxa GitHub](https://streak-stats.demolab.com/?user=bossot&theme=radical&hide_border=true)
-
----
-
-## 🌟 Sobre mi
 
 - Professionalment, treballo com a Platform Engineer en entorns cloud i Kubernetes.
 - Prioritzo estructura, observabilitat, automatització i documentació útil.
