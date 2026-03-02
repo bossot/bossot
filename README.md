@@ -1,68 +1,68 @@
-# 👋 Hola, sóc en Santi! 
+# 👋 Hola, sóc en Santi!
 
-🚀 **Platform Engineer** | 🏠 **Homelab Architect** | 🎮 **Gamer & Anime Fan**  
-📍 Mallorca, Spain | 💼 Platform Engineer | 👨‍👩‍👧‍👦 Family Man
+🚀 **Platform Engineer** | 🏠 **Homelab Architect** | 🎮 **Gamer & Anime Fan**
+📍 Mallorca | 💼 Platform Engineer | 👨‍👩‍👧‍👦 Pare de família
 
 ---
 
-## 🏗️ **My Homelab Universe**
+## 🏗️ **El Meu Univers Homelab**
 
 El meu homelab està gestionat amb filosofia **GitOps + IaC**, documentat en format [Diátaxis](https://diataxis.fr/) sobre MkDocs.
 
-[![Homelab Repo](https://img.shields.io/badge/📚-Homelab_Repository-2ea44f?style=for-the-badge)](https://github.com/ramisclar/tekgarden)
+[![Repositori Homelab](https://img.shields.io/badge/📚-Repositori_Homelab-2ea44f?style=for-the-badge)](https://github.com/ramisclar/tekgarden)
 
-### 🖥️ **Hardware Stack**
+### 🖥️ **Stack de Hardware**
 | Component | Especificacions | Funció |
 |-----------|----------------|--------|
-| **Proxmox Node** | High-performance CPU, 64GB RAM, NVMe storage | Main compute node |
-| **NAS Server** | 64GB RAM, 4×4TB RAID10 | NAS with 30+ Docker containers |
-| **Cloud VPS** | European provider | Public reverse proxy with Nginx |
+| **Node Proxmox** | CPU d'alt rendiment, 64GB RAM, emmagatzematge NVMe | Node principal de computació |
+| **Servidor NAS** | 64GB RAM, 4×4TB RAID10 | NAS amb 30+ contenidors Docker |
+| **VPS al núvol** | Proveïdor europeu | Reverse proxy públic amb Nginx |
 
-### ☸️ **k3s Cluster**
+### ☸️ **Cluster k3s**
 6 nodes (3 control plane + 3 workers) gestionats amb **FluxCD** en mode GitOps pur.
-- **Private VLAN** for cluster isolation
-- **Secrets**: External Secrets with password manager
-- **Ingress**: Traefik with TLS termination
+- **VLAN privada** per aïllament del cluster
+- **Secrets**: Gestió externa amb password manager
+- **Ingress**: Traefik amb terminació TLS
 
-### 🌐 **Services Deployed**
+### 🌐 **Serveis Desplegats**
 | Servei | Funció | Tecnologia |
 |--------|--------|------------|
-| 🏠 Home Assistant | Home automation | ESPHome, Zigbee |
-| 📸 Photo Gallery | Personal photo management | Immich |
-| 📰 RSS Reader | News aggregation | Miniflux |
-| 🔐 SSO/IdP | Authentication & authorization | Authentik |
-| 📊 Monitoring | Metrics & visualization | Prometheus+Grafana |
-| 🔖 Bookmark Manager | Link organization | Linkding |
+| 🏠 Home Assistant | Automatització de llar | ESPHome, Zigbee |
+| 📸 Galeria de fotos | Gestió personal de fotos | Immich |
+| 📰 Lector RSS | Agregació de notícies | Miniflux |
+| 🔐 SSO/IdP | Autenticació i autorització | Authentik |
+| 📊 Monitorització | Mètriques i visualització | Prometheus+Grafana |
+| 🔖 Gestor d'enllaços | Organització de links | Linkding |
 
-### 🌐 **Network Architecture**
-**Split DNS** with redundant Pi-hole instances:
-- Public domains → Cloud proxy → Internet
-- Internal domains → Direct local resolution
+### 🌐 **Arquitectura de Xarxa**
+**DNS dividit** amb instàncies redundants de Pi-hole:
+- Dominis públics → Proxy al núvol → Internet
+- Dominis interns → Resolució local directa
 
-**VLAN Segmentation:**
-- **LAN**: Home network
-- **SRV**: Server VLAN
-- **DOCKER**: Container network
-- **DNS**: DNS servers VLAN
-- **K8S**: Kubernetes cluster VLAN
+**Segmentació per VLANs:**
+- **LAN**: Xarxa domèstica
+- **SRV**: VLAN de servidors
+- **DOCKER**: Xarxa de contenidors
+- **DNS**: VLAN de servidors DNS
+- **K8S**: VLAN del cluster Kubernetes
 
-### 🔐 **Security - Defense in Depth**
-**3-layer security architecture:**
-1. **Firewall** - Granular rules, restrictive VPN policies
-2. **Cloud Proxy + Security** - SSO, device approvals, geoIP blocking
-3. **Reverse Proxy** - Authentication forwarding, security headers, rate limiting
+### 🔐 **Seguretat - Defensa en Profunditat**
+**Arquitectura de seguretat de 3 capes:**
+1. **Firewall** - Regles granulars, polítiques restrictives de VPN
+2. **Proxy al núvol + Seguretat** - SSO, aprovacions de dispositius, bloqueig geoIP
+3. **Reverse Proxy** - Reenviaments d'autenticació, capçaleres de seguretat, limitació de taxa
 
-### 💾 **Backup Strategy (3-2-1)**
-- **Local backups** → Sync to cloud storage
-- **NAS backups** → Sync to cloud storage
-- **Local snapshots** with BTRFS
-- **External drive** weekly air-gap backups
+### 💾 **Estratègia de Backup (3-2-1)**
+- **Backups locals** → Sincronització a emmagatzematge al núvol
+- **Backups al NAS** → Sincronització a emmagatzematge al núvol
+- **Snapshots locals** amb BTRFS
+- **Disc extern** setmanal amb air-gap
 
 ---
 
-## 🛠️ **Tech Stack & Skills**
+## 🛠️ **Stack Tècnic i Habilitats**
 
-### ☁️ **Cloud & Infrastructure**
+### ☁️ **Núvol i Infraestructura**
 ![Kubernetes](https://img.shields.io/badge/-Kubernetes-326CE5?logo=kubernetes&logoColor=white)
 ![Proxmox](https://img.shields.io/badge/-Proxmox-E57000?logo=proxmox&logoColor=white)
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white)
@@ -73,19 +73,19 @@ El meu homelab està gestionat amb filosofia **GitOps + IaC**, documentat en for
 ![FluxCD](https://img.shields.io/badge/-FluxCD-0D1220?logo=flux&logoColor=white)
 ![GitHub Actions](https://img.shields.io/badge/-GitHub_Actions-2088FF?logo=github-actions&logoColor=white)
 ![CI/CD](https://img.shields.io/badge/-CI/CD-FF6C37?logo=jenkins&logoColor=white)
-![Monitoring](https://img.shields.io/badge/-Monitoring-F2B820?logo=prometheus&logoColor=white)
+![Monitorització](https://img.shields.io/badge/-Monitorització-F2B820?logo=prometheus&logoColor=white)
 
-### 🏠 **Home Automation**
+### 🏠 **Automatització de Llar**
 ![Home Assistant](https://img.shields.io/badge/-Home_Assistant-41BDF5?logo=home-assistant&logoColor=white)
 ![ESPHome](https://img.shields.io/badge/-ESPHome-000000?logo=esphome&logoColor=white)
 ![Zigbee](https://img.shields.io/badge/-Zigbee-EB5440?logo=zigbee&logoColor=white)
 
-### 💻 **Programming & Scripting**
+### 💻 **Programació i Scripting**
 ![Python](https://img.shields.io/badge/-Python-3776AB?logo=python&logoColor=white)
 ![Bash](https://img.shields.io/badge/-Bash-4EAA25?logo=gnu-bash&logoColor=white)
 ![YAML](https://img.shields.io/badge/-YAML-CB171E?logo=yaml&logoColor=white)
 
-### 🛠️ **Technical Stack**
+### 🛠️ **Stack Tècnic**
 **Domina:**
 ![Docker](https://img.shields.io/badge/-Docker-2496ED?logo=docker&logoColor=white)
 ![k3s](https://img.shields.io/badge/-k3s-FFC66D?logo=kubernetes&logoColor=black)
@@ -104,57 +104,57 @@ El meu homelab està gestionat amb filosofia **GitOps + IaC**, documentat en for
 
 ---
 
-## 📊 **GitHub Stats**
+## 📊 **Estadístiques de GitHub**
 
-![GitHub stats](https://github-readme-stats.vercel.app/api?username=ramisclar&show_icons=true&theme=radical&hide_border=true&count_private=true)
+![Estadístiques GitHub](https://github-readme-stats.vercel.app/api?username=bossot&show_icons=true&theme=radical&hide_border=true&count_private=true)
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=ramisclar&layout=compact&theme=radical&hide_border=true)
+![Llenguatges Principals](https://github-readme-stats.vercel.app/api/top-langs/?username=bossot&layout=compact&theme=radical&hide_border=true)
 
-![GitHub Streak](https://streak-stats.demolab.com/?user=ramisclar&theme=radical&hide_border=true)
-
----
-
-## 🎯 **Featured Projects**
-
-### 🏗️ **[Homelab Infrastructure](https://github.com/ramisclar/tekgarden)**
-Complete homelab with GitOps, Diátaxis documentation and full automation.
-
-### 🏠 **[Home Assistant Configurations](https://github.com/ramisclar/home-assistant-config)**
-Home automation configurations with ESPHome, Zigbee and local integrations.
-
-### 🎮 **[Minecraft Server](https://github.com/ramisclar/minecraft-server)**
-Minecraft server with Docker, mods and automated administration.
-
-### 🔐 **[External Secrets Management](https://github.com/ramisclar/op-external-secrets)**
-Configuration for managing Kubernetes secrets with password manager.
-
-### ⚠️ **Continuous Improvement**
-- Database backup automation
-- DNS configuration automation  
-- Log observability stack implementation
-- Infrastructure monitoring enhancement
+![Ratxa GitHub](https://streak-stats.demolab.com/?user=bossot&theme=radical&hide_border=true)
 
 ---
 
-## 🌟 **About Me**
+## 🎯 **Projectes Destacats**
 
-- **👨‍💻 Professional**: Platform Engineer specialized in cloud infrastructure, Kubernetes and CI/CD pipelines.
-- **🧠 Neurodivergent**: Adult ASD - structure, documentation and automation aren't optional, it's how I think.
-- **👨‍👩‍👧‍👦 Family**: Living in Mallorca with my partner and our two daughters.
-- **🎮 Hobbies**: Karaoke, Minecraft, anime, technical cooking in the homelab.
-- **🏴 Values**: Digital sovereignty, open source, anti-BigTech, feminism.
+### 🏗️ **[Infraestructura Homelab](https://github.com/ramisclar/tekgarden)**
+Homelab complet amb GitOps, documentació Diátaxis i automatització total.
+
+### 🏠 **[Configuracions Home Assistant](https://github.com/ramisclar/home-assistant-config)**
+Configuracions d'automatització de llar amb ESPHome, Zigbee i integracions locals.
+
+### 🎮 **[Servidor Minecraft](https://github.com/ramisclar/minecraft-server)**
+Servidor Minecraft amb Docker, mods i administració automatitzada.
+
+### 🔐 **[Gestió de Secrets Externs](https://github.com/ramisclar/op-external-secrets)**
+Configuració per gestionar secrets de Kubernetes amb gestor de contrasenyes.
+
+### ⚠️ **Millora Contínua**
+- Automatització de backups de bases de dades
+- Automatització de configuració DNS
+- Implementació de stack d'observabilitat de logs
+- Millora de monitorització d'infraestructura
 
 ---
 
-## 📫 **Connect With Me**
+## 🌟 **Sobre Mi**
+
+- **👨‍💻 Professional**: Platform Engineer especialitzat en infraestructura cloud, Kubernetes i pipelines CI/CD.
+- **🧠 Enfocament**: L'estructura, documentació i automatització són fonamentals per a mi.
+- **👨‍👩‍👧‍👦 Família**: Visco a Mallorca amb la meva parella i les nostres dues filles.
+- **🎮 Aficions**: Karaoke, Minecraft, anime, cuina tècnica al homelab.
+- **💡 Filosofia**: Crear infraestructures fiables, documentades i automatitzades.
+
+---
+
+## 📫 **Connecta amb Mi**
 
 [![LinkedIn](https://img.shields.io/badge/-LinkedIn-0A66C2?logo=linkedin&logoColor=white)](https://linkedin.com/in/ramisclar)
-[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white)](https://github.com/ramisclar)
+[![GitHub](https://img.shields.io/badge/-GitHub-181717?logo=github&logoColor=white)](https://github.com/bossot)
 [![Discord](https://img.shields.io/badge/-Discord-5865F2?logo=discord&logoColor=white)](https://discord.gg/rubiks)
 [![Email](https://img.shields.io/badge/-Email-D14836?logo=gmail&logoColor=white)](mailto:santi@ramisclar.cat)
 
 ---
 
-*"The best infrastructure is the one that works so well you don't even notice it's there."* 🚀
+*"La millor infraestructura és la que funciona tan bé que ni te n'adones que hi és."* 🚀
 
-**Last update**: March 2026 | **Maintenance**: Community Manager & Tech Assistant
+**Última actualització**: Març 2026 | **Manteniment**: Community Manager & Tech Assistant
